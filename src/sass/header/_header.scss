@@ -1,0 +1,26 @@
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  nav {
+    margin-left: auto;
+    // margin-right: 50px;
+    align-self: center;
+    ul {
+      display: flex;
+      li {
+        list-style-type: none;
+        margin-left: 20px;
+        a {
+          text-decoration: none;
+          color: $textDark;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+        .contact-link {
+          color: $textLight;
+        }
+      }
+    }
+  }
+}

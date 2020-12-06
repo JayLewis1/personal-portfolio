@@ -1,0 +1,19 @@
+.introduction-container {
+  width: 80%;
+  height: 630px;
+  margin: 0 auto;
+  display: flex;
+  .title-wrapper {
+  width: 50%;
+  margin-top: 150px;  
+    h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    }
+    p {
+      font-size: 2rem;
+      color: $textLight;
+      font-weight: 600;
+    }
+  }
+}
