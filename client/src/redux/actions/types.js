@@ -1,0 +1,3 @@
+export const EXACT_ROUTE_LOCATION = "EXACT_ROUTE_LOCATION";
+export const FORM_DATA = "FORM_DATA";
+export const INPUT_ERROR = "INPUT_ERROR";
