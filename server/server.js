@@ -1,5 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
+
+const path = require("path");
 const cors = require("cors");
 
 const app = express();
@@ -19,12 +21,14 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json({ extended: false }));
 
 
-app.get("/", (req, res) => res.send("API running"));
+// app.get("/", (req, res) => res.send("API running"));
 
 app.use("/api/nodemailer", require("./routes/api/nodemailer"));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/build", "index.html"));
+app.use(express.static(path.join(__dirname, '../client/build')))
+
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
