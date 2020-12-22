@@ -34,7 +34,7 @@ app.use("/api/nodemailer", require("./routes/api/nodemailer"));
 app.use(express.static('./client/build'))
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join("./client/build", "index.html"));
+  res.sendFile("./client/build", "index.html");
 });
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
