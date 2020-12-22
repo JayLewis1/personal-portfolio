@@ -161,3 +161,43 @@
     }
   }
 }
+
+@media (max-width : 725px) {
+  .about-container {
+    width: 90%;
+    .table-header-buttons {
+      width: 100%;
+      li {
+        button {
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .table {
+    width: 90%;
+    margin-top: 20px;
+    .table-row {
+     .row-wrapper {
+      .skill, .course {
+        display: none;
+      }
+      button {
+        margin-left: auto;
+      }
+     }
+     .list-of-skills {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       li {
+         margin-bottom: 5px;
+         border : 2px red;
+       }
+     }
+    }
+  }
+ }
+}
+
+// @media (min-width : 726px) {
+
+// }

@@ -1,5 +1,5 @@
 import React , {useState, useEffect} from 'react'
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, NavLink } from 'react-router-dom';
 
 var previousRoute;
 
@@ -29,11 +29,8 @@ const Header = () => {
     <header>
       <nav>
         <ul>
-          {location.pathname === "/projects" && 
-          <li><Link to="/">home</Link></li>}
-           {location.pathname === "/" && 
-          <li><Link to="/projects">projects</Link></li>}
-          {/* <li><Link to="/projects">projects</Link></li> */}
+           <li><NavLink exact activeClassName="active" to="/" >home</NavLink></li>
+           <li><NavLink exact activeClassName="active" to="/projects">projects</NavLink></li>
           <li><a href="/#about">about</a></li>
           <li><a href="/#contact" className="contact-link">contact</a></li>
         </ul>

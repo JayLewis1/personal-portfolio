@@ -3,6 +3,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 body {
@@ -10,7 +11,6 @@ body {
   height: 100%;
   font-family: "Nunito", sans-serif;
   color: #1A3764;
-  font-size: 18px;
   font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,7 +23,6 @@ body {
 }
 
 body .App {
-  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,12 +32,42 @@ body .App {
           flex-direction: column;
 }
 
+@media (max-width: 750px) {
+  * {
+    font-size: 14px;
+  }
+  .App {
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+  body .App {
+    width: 100vw;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1201px) {
+  * {
+    font-size: 16px;
+  }
+  body .App {
+    width: 1200px;
+  }
+}
+
 header {
   width: 100%;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-right: 25px;
 }
 
 header nav {
@@ -52,6 +81,11 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav ul .active {
+  border-bottom: 2px solid #3382F7;
+  padding-bottom: 2px;
 }
 
 header nav ul li {
@@ -70,8 +104,19 @@ header nav ul li .contact-link {
   color: #3382F7;
 }
 
+@media (max-width: 370px) {
+  header nav {
+    display: none;
+  }
+}
+
+@media (min-width: 371px) and (max-width: 725px) {
+  header nav {
+    margin: 0 auto;
+  }
+}
+
 .footer {
-  width: 60%;
   margin: 0 auto;
   margin-bottom: 50px;
   height: 180px;
@@ -160,6 +205,10 @@ header nav ul li .contact-link {
           justify-content: center;
 }
 
+.footer nav ul .footerActive {
+  color: #3382F7;
+}
+
 .footer nav ul li {
   list-style-type: none;
   margin: 0  15px;
@@ -178,6 +227,18 @@ header nav ul li .contact-link {
   color: #3382F7;
 }
 
+@media (max-width: 750px) {
+  .footer {
+    width: 100%;
+  }
+}
+
+@media (min-width: 761px) {
+  .footer {
+    width: 60%;
+  }
+}
+
 .introduction-container {
   width: 80%;
   height: 900px;
@@ -188,7 +249,6 @@ header nav ul li .contact-link {
 }
 
 .introduction-container .title-wrapper {
-  width: 50%;
   margin-top: 150px;
 }
 
@@ -201,6 +261,18 @@ header nav ul li .contact-link {
   font-size: 2rem;
   color: #3382F7;
   font-weight: 600;
+}
+
+@media (max-width: 725px) {
+  .title-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 726px) {
+  .title-wrapper {
+    width: 50%;
+  }
 }
 
 .projects-container {
@@ -555,6 +627,62 @@ header nav ul li .contact-link {
   width: 5%;
 }
 
+@media (max-width: 725px) {
+  .projects-container {
+    width: 100%;
+  }
+  .projects-container .projects-flex {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects-container .projects-flex li {
+    margin-bottom: 30px;
+  }
+  .projects-container .dirt-display {
+    background-color: #FD9970;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects-container .bouncing-display {
+    background-color: #FFC3FD;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects-container .logic-display {
+    background-color: #FDEFE7;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects-container .see-all-projects {
+    background-color: #3382F7;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects-container .see-all-projects:hover {
+    width: 95%;
+  }
+  .projects-container .see-all-projects:hover .all-projects-images {
+    opacity: 1;
+  }
+  .projects-container .see-all-projects:hover .all-projects-link {
+    margin-top: 0;
+    -webkit-transform: translate(180px, 20px);
+            transform: translate(180px, 20px);
+  }
+  .projects-container .see-all-projects:hover + .logic-display {
+    width: 5%;
+  }
+}
+
+@media (min-width: 726px) {
+  .title-wrapper {
+    width: 50%;
+  }
+}
+
 .about-container {
   width: 80%;
   margin: 200px auto;
@@ -786,10 +914,46 @@ header nav ul li .contact-link {
   font-weight: 700;
 }
 
+@media (max-width: 725px) {
+  .about-container {
+    width: 90%;
+  }
+  .about-container .table-header-buttons {
+    width: 100%;
+  }
+  .about-container .table-header-buttons li button {
+    font-size: 1.3rem;
+  }
+  .about-container .table {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .about-container .table .table-row .row-wrapper .skill, .about-container .table .table-row .row-wrapper .course {
+    display: none;
+  }
+  .about-container .table .table-row .row-wrapper button {
+    margin-left: auto;
+  }
+  .about-container .table .table-row .list-of-skills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .about-container .table .table-row .list-of-skills li {
+    margin-bottom: 5px;
+    border: 2px red;
+  }
+}
+
 .interests-container {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 200px;
+}
+
+.interests-container .hobbies-title-mobile {
+  display: none;
 }
 
 .interests-container .interests-grid {
@@ -928,6 +1092,38 @@ header nav ul li .contact-link {
   color: #3382F7;
 }
 
+@media (max-width: 725px) {
+  .interests-container .hobbies-title-mobile {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+  .interests-container .interests-grid {
+    width: 80%;
+    margin: 0 auto;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .interests-container .interests-grid li img {
+    width: 70px;
+  }
+  .interests-container .interests-grid .row-1, .interests-container .interests-grid .row-2, .interests-container .interests-grid .row-3 {
+    grid-column: auto;
+  }
+  .interests-container .interests-grid .hobbies-title {
+    display: none;
+  }
+}
+
 .contact-container {
   width: 80%;
   margin: 0 auto;
@@ -995,15 +1191,14 @@ header nav ul li .contact-link {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 25px auto;
-  width: 380px;
 }
 
 .contact-container .contact-details ul .number {
-  width: 300px;
+  width: 310px;
 }
 
 .contact-container .contact-details ul .email {
-  width: 100%;
+  width: 330px;
 }
 
 .contact-container .contact-details ul .LinkedIn {
@@ -1018,6 +1213,7 @@ header nav ul li .contact-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .contact-container .contact-details ul li div {
@@ -1287,5 +1483,65 @@ header nav ul li .contact-link {
 .contact-container .form-container form #submit:active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 420px) {
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container .contact-details {
+    width: 80%;
+  }
+  .contact-container .contact-details ul {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 2px red solid;
+  }
+  .contact-container .contact-details ul .number, .contact-container .contact-details ul .email, .contact-container .contact-details ul .LinkedIn {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .contact-container .contact-details ul li div {
+    height: 50px;
+  }
+  .contact-container .contact-details ul li div img {
+    margin-right: 0px;
+  }
+  .contact-container .contact-details ul li div button, .contact-container .contact-details ul li div a {
+    margin-left: auto;
+    margin-right: 25px;
+  }
+  .contact-container .form-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 725px) {
+  .contact-container {
+    width: 100%;
+  }
+  .contact-container .contact-details ul {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-container .contact-details ul .number, .contact-container .contact-details ul .email, .contact-container .contact-details ul .LinkedIn {
+    width: 300px;
+    margin: 15px auto;
+  }
+  .contact-container .contact-details ul li div button, .contact-container .contact-details ul li div a {
+    margin-left: auto;
+  }
+  .contact-container .form-container {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

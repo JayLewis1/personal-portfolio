@@ -36,27 +36,23 @@
       display: flex;
       flex-direction: column;
       margin: 25px auto;
-      width: 380px;
+      // width: 380px;
 
     
-    .number {
-      width : 300px;
-    }
+      .number {
+        width : 310px;
+      }
       .email {
-        width: 100%;
+        width: 330px;
       }
       .LinkedIn {
         width: 265px;
       }
       li {
-        // width: 100%;
-        // display: flex;
-        // box-shadow: $boxShadow;
-        // height: 50px;
         margin: 15px 0;
         display: flex;
         align-items: center;
-      
+        position: relative;
         div {
           box-shadow: $boxShadow;
           border-radius: 15px;
@@ -128,6 +124,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+  
         margin-left: 15px;
         transition: 1s;
         z-index: 0;
@@ -229,4 +226,66 @@
       }
     }
   }
+}
+
+@media (max-width : 420px) {
+  .contact-container {
+    width: 100%;
+    .contact-details {
+      width: 80%;
+      ul {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border: 2px red solid;
+        .number , .email , .LinkedIn {
+          width: 100%;
+          margin: 15px auto;
+      }
+      li {
+        div {
+          height: 50px;
+          img {
+            margin-right: 0px;
+          }
+          button , a { 
+            margin-left: auto;
+            margin-right: 25px;
+         }
+        }
+      }
+    }
+  }
+  .form-container {
+    width: 100%;
+  }
+}
+}
+
+@media (min-width : 421px) and (max-width : 725px) {
+  .contact-container {
+    width: 100%;
+    .contact-details {
+      // width: 80%;
+      ul {
+        // width: 100%;
+        align-items: center;
+        justify-content: center;
+        .number , .email , .LinkedIn {
+          width: 300px;
+          margin: 15px auto;
+      }
+      li {
+        div {
+          button , a { 
+            margin-left: auto;
+         }
+        }
+      }
+    }
+  }
+  .form-container {
+    width: 70%;
+  }
+}
 }

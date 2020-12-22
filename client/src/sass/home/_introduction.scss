@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: flex;
   .title-wrapper {
-  width: 50%;
+  
   margin-top: 150px;  
     h1 {
     font-size: 4rem;
@@ -15,5 +15,16 @@
       color: $textLight;
       font-weight: 600;
     }
+  }
+}
+
+@media (max-width : 725px) {
+  .title-wrapper {
+    width: 100%;
+  }
+}
+@media (min-width : 726px) {
+  .title-wrapper {
+    width: 50%;
   }
 }

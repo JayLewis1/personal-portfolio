@@ -2,12 +2,17 @@ header {
   width: 100%;
   height: 60px;
   display: flex;
+  padding-right: 25px;
   nav {
     margin-left: auto;
     // margin-right: 50px;
     align-self: center;
     ul {
       display: flex;
+      .active {
+        border-bottom: 2px solid $textLight;
+        padding-bottom: 2px;
+      }
       li {
         list-style-type: none;
         margin-left: 20px;
@@ -21,6 +26,22 @@ header {
           color: $textLight;
         }
       }
+    }
+  }
+}
+
+@media (max-width : 370px) {
+  header {
+    nav {
+     display: none;
+    }
+  }
+}
+
+@media (min-width : 371px) and (max-width : 725px) {
+  header {
+    nav {
+      margin: 0 auto;
     }
   }
 }
