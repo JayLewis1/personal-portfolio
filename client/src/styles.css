@@ -1544,4 +1544,196 @@ header nav ul li .contact-link {
     width: 70%;
   }
 }
+
+.portfolio-container {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-container h3 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.portfolio-container .portfolio-grid {
+  margin: 50px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+.portfolio-container .portfolio-grid li {
+  list-style-type: none;
+  width: 100%;
+  height: 300px;
+  -webkit-box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+          box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-container .portfolio-grid li img {
+  width: 100%;
+}
+
+.project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 80px auto;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.project-container .backbtn {
+  position: absolute;
+  top: -80px;
+  left: 20px;
+  -webkit-box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+          box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.project-container .backbtn img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 100%;
+}
+
+.project-container div {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.project-container div .project-photo {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+          box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project-container div h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.project-container div .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 150px;
+  margin: 30px 0;
+}
+
+.project-container div .link-container a {
+  -webkit-box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+          box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.project-container div .link-container img {
+  width: 100%;
+  -webkit-box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+          box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+  border-radius: 25px;
+}
+
+.project-container div .mobile-backbtn {
+  display: none;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #1A3764;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+          box-shadow: 1px 2px 10px rgba(13, 35, 69, 0.2);
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+
+.project-container div .mobile-backbtn img {
+  width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: auto 10px;
+  margin-right: 20px;
+}
+
+@media (max-width: 725px) {
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .project-container .backbtn {
+    width: 45px;
+    height: 45px;
+    top: -70px;
+    display: none;
+  }
+  .project-container .photo-container {
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .project-container div {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+  .project-container div .link-container {
+    width: 130px;
+    margin: 30px auto;
+  }
+  .project-container div .link-container a {
+    width: 45px;
+    height: 45px;
+  }
+  .project-container div .mobile-backbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from "react-router-dom";
 
 import PropTypes from "prop-types";
 
@@ -21,8 +22,25 @@ const Projects = ({setRouteLocation}) => {
   }, [setRouteLocation, exactRoute])
   
   return (
-    <div>
-        <h2>Projects Portfolio</h2>
+    <div className="portfolio-container">
+       <h3>My Portfolio</h3>
+       <ul className="portfolio-grid">
+          <li>
+            <Link to="/projects/dirt">
+             <img src="/assets/project-photos/dirt@2x.jpg" alt="Dirt Website"/>  
+            </Link>
+          </li>  
+          <li>
+            <Link  to="/projects/bouncingborders">
+             <img src="/assets/project-photos/bouncing-borders@2x.jpg" alt="Bouncing Borders Website"/>  
+            </Link>
+          </li>  
+          <li>
+            <Link  to="/projects/logic">
+              <img src="/assets/project-photos/logic@2x.jpg" alt="Logic Website"/>
+            </Link>  
+          </li>  
+       </ul>
     </div>
   )
 }

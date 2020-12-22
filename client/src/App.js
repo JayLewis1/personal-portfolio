@@ -12,6 +12,9 @@
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Projects from "./components/projects/Projects";
+import Dirt from "./components/projects/Dirt";
+import BouncingBorders from "./components/projects/BouncingBorders";
+import Logic from "./components/projects/Logic";
 import Footer from "./components/Footer";
 
  const App = ()  => {
@@ -23,6 +26,9 @@ import Footer from "./components/Footer";
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/projects/dirt" component={Dirt} />
+          <Route exact path="/projects/bouncingborders" component={BouncingBorders} />
+          <Route exact path="/projects/logic" component={Logic} />
         </Switch>
       <Footer />
       </div>
