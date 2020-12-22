@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="167.599" height="107.829" viewBox="0 0 167.599 107.829">
+  <defs>
+    <linearGradient id="linear-gradient" x2="1.192" y2="1.312" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f76d2f"/>
+      <stop offset="1" stop-color="#f7c92f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.2" y1="-0.13" x2="1" y2="1" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0" y1="0" x2="4.567" y2="1.232" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="-0.118" y1="0.855" x2="1.329" y2="0.066" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="-11.194" y1="-0.398" x2="-6.995" y2="0.17" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="-0.57" y1="0.084" x2="1.544" y2="1.245" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="-0.046" y1="0.843" x2="1.157" y2="0.109" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="0.062" y1="0" x2="0.818" y2="1.206" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Logo-3" transform="translate(-92.65 -437.652)">
+    <g id="Group_30" data-name="Group 30" transform="translate(92.65 437.652)">
+      <g id="Group_22" data-name="Group 22" transform="translate(0 0)">
+        <rect id="Rectangle_13" data-name="Rectangle 13" width="9.237" height="44.459" transform="translate(112.551 29.119)" fill="url(#linear-gradient)"/>
+        <rect id="Rectangle_543" data-name="Rectangle 543" width="5.808" height="11.892" transform="translate(114.265 8.551)" fill="url(#linear-gradient-2)"/>
+        <rect id="Rectangle_14" data-name="Rectangle 14" width="9.702" height="73.582" transform="translate(0 0)" fill="url(#linear-gradient-3)"/>
+        <g id="Group_20" data-name="Group 20" transform="translate(15.956 30.19)">
+          <path id="Path_29" data-name="Path 29" d="M21.61,21.6,0,21.6A21.61,21.61,0,1,0,21.61,0,21.607,21.607,0,0,0,0,21.6Zm21.61,0M10,21.6A11.61,11.61,0,1,1,21.61,33.261,11.634,11.634,0,0,1,10,21.6Z" transform="translate(43.206) rotate(90)" fill="url(#linear-gradient-4)"/>
+          <rect id="Rectangle_15" data-name="Rectangle 15" width="9.237" height="43.229" rx="4.618" transform="translate(81.924 17.895)" fill="url(#linear-gradient-5)"/>
+          <path id="Path_24" data-name="Path 24" d="M0,0H9.237V56.061H0Z" transform="translate(81.916 20.624)" fill="url(#linear-gradient-6)"/>
+          <path id="Path_15" data-name="Path 15" d="M21.61,21.6,0,21.6A21.61,21.61,0,1,0,21.61,0,21.607,21.607,0,0,0,0,21.6Zm21.61,0M10,21.6A11.61,11.61,0,1,1,21.61,33.261,11.634,11.634,0,0,1,10,21.6Z" transform="translate(91.199) rotate(90)" fill="url(#linear-gradient-7)"/>
+        </g>
+        <path id="Subtraction_1" data-name="Subtraction 1" d="M21.6,43.22A21.611,21.611,0,0,1,6.328,6.329a21.608,21.608,0,0,1,26.152-3.4,21.733,21.733,0,0,1,7.746,7.714l-9.684,3.507a11.611,11.611,0,1,0-.608,15.577l9.385,4.25A21.634,21.634,0,0,1,21.6,43.22Z" transform="translate(127.374 30.682)" fill="url(#linear-gradient-8)"/>
+      </g>
+    </g>
+    <text id="Trades" transform="translate(93.52 539.482)" fill="#4a506e" font-size="25" font-family="Muli-Bold, Muli" font-weight="700"><tspan x="0" y="0">Trades</tspan></text>
+  </g>
+</svg>

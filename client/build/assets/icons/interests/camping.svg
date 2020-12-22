@@ -1,0 +1,15 @@
+<svg id="camping" xmlns="http://www.w3.org/2000/svg" width="66.595" height="50.987" viewBox="0 0 66.595 50.987">
+  <path id="Path_76" data-name="Path 76" d="M214.9,70c-6.9,2.969-11.961,2.581-19.9,0l19.12,39.28h20.811Z" transform="translate(-169.639 -68.7)" fill="#fedc75"/>
+  <rect id="Rectangle_553" data-name="Rectangle 553" width="21" height="9" transform="translate(44.684 40.297)" fill="#ffb571"/>
+  <path id="Path_77" data-name="Path 77" d="M140.991,336.739,131.5,321,122,336.739Z" transform="translate(-106.133 -287.053)" fill="#6e6e6e"/>
+  <g id="Group_124" data-name="Group 124" transform="translate(6.504 1.301)">
+    <path id="Path_78" data-name="Path 78" d="M68.862,70,50,109.281v9.1h9.365l9.495-15.738V70Z" transform="translate(-50.002 -70.001)" fill="#ffb571"/>
+    <path id="Path_79" data-name="Path 79" d="M195,70v32.647l9.495,15.738h9.625v-9.1Z" transform="translate(-176.141 -70.002)" fill="#ffb571"/>
+  </g>
+  <g id="Group_125" data-name="Group 125" transform="translate(15.868 33.948)">
+    <path id="Path_80" data-name="Path 80" d="M195,321l9.495,15.738V323.212Z" transform="translate(-185.506 -321.001)" fill="#fedc75"/>
+    <path id="Path_81" data-name="Path 81" d="M122,336.739,131.5,321,122,322.822Z" transform="translate(-122.001 -321.001)" fill="#fedc75"/>
+  </g>
+  <path id="Path_82" data-name="Path 82" d="M66.452,99.99l-20.03-39.28a1.3,1.3,0,0,0-1.673-.6c-6.144,2.642-10.757,2.632-18.985-.042a1.33,1.33,0,0,0-1.574.674L5.351,99.975.171,109.04A1.3,1.3,0,1,0,2.43,110.33L5.2,105.478v4.207a1.3,1.3,0,0,0,1.3,1.3h58.79a1.3,1.3,0,0,0,1.3-1.3v-9.1A2.517,2.517,0,0,0,66.452,99.99ZM14.568,95.768v12.617H7.8v-7.508L24.063,67.014V92.872L15.623,94.49A1.3,1.3,0,0,0,14.568,95.768Zm2.6,1.075,5.573-1.069-5.573,9.237Zm1,11.542,7.191-11.92,7.191,11.92Zm15.385-3.373-5.489-9.1,5.489,1.278Zm9.625,3.373H36.159V96.158a1.3,1.3,0,0,0-1.006-1.267l-8.489-1.977V66.944L43.183,100.88v7.5ZM31.446,70.824c.733.166,1.566.336,2.454.48a1.3,1.3,0,0,0,.416-2.568c-1.387-.225-2.646-.522-3.458-.732-.312-.08-.613-.163-.9-.245L27.837,63.41c5.894,1.637,10.75,1.9,16.812-.453L63.171,99.28H45.3Zm14.338,37.561V104.4l3.077,3.989Zm18.209,0H52.146l-5.017-6.5H63.993Z" transform="translate(0 -59.999)" fill="none"/>
+  <ellipse id="Ellipse_23" data-name="Ellipse 23" cx="1.301" cy="1.301" rx="1.301" ry="1.301" transform="translate(37.991 9.001)"/>
+</svg>
