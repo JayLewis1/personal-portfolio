@@ -15,10 +15,10 @@ const Dirt = () => {
      <div>
        <h3>Dirt</h3>
        <span className="link-container">
-         <a href="https://github.com/JayLewis1/Portfolio">
+         <a href="https://github.com/JayLewis1/dirt">
            <img src="/assets/icons/github-blue.svg" alt="Github Link"/>
          </a>
-         <a href="/">
+         <a href="http://www.dirtaliceinchains.com/">
            <img src="/assets/icons/website-blue.svg" alt="Website Link"/>
          </a>
        </span>

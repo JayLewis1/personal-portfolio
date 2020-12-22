@@ -10,10 +10,10 @@ const Projects = () => {
               <a href="/" className="project-link"> 
               <img src="/assets/icons/arrow-left.svg" alt="Link to project" className="shake-animation"/></a> 
               <div className="link-container">
-                <a href="/" className="shake-animation"> 
+                <a href="https://github.com/JayLewis1/dirt" className="shake-animation"> 
                   <img src="/assets/icons/github.svg" alt="Github Link"/> 
                 </a>
-                <a href="/" className="shake-animation"> 
+                <a href="http://www.dirtaliceinchains.com/" className="shake-animation"> 
                   <img src="/assets/icons/website.svg" alt="Website Link"/>
                 </a>
               </div>
@@ -24,10 +24,10 @@ const Projects = () => {
                 <a href="/" className="project-link"> 
                 <img src="/assets/icons/arrow-left-pink.svg" alt="Link to project" className="shake-animation"/></a> 
                 <div className="link-container">
-                  <a href="/" className="bb-links" className="shake-animation"> 
+                  <a href="https://github.com/JayLewis1/bouncingborderswp" className="bb-links" className="shake-animation"> 
                     <img src="/assets/icons/github-pink.svg" alt="Github Link"/> 
                   </a>
-                  <a href="/" className="bb-links" className="shake-animation"> 
+                  <a href="http://bouncingborders.com/" className="bb-links" className="shake-animation"> 
                     <img src="/assets/icons/website-pink.svg" alt="Website Link"/>
                   </a> 
                 </div>
@@ -40,10 +40,10 @@ const Projects = () => {
                 <a href="/" className="project-link"> 
                 <img src="/assets/icons/arrow-left-orange.svg" alt="Link to project" className="shake-animation"/></a> 
                 <div className="link-container">
-                  <a href="/" className="shake-animation"> 
+                  <a href="https://github.com/JayLewis1/logic-trades" className="shake-animation"> 
                     <img src="/assets/icons/github-orange.svg" alt="Github Link"/> 
                   </a>
-                  <a href="/" className="shake-animation"> 
+                  <a href="https://logictrades.herokuapp.com/" className="shake-animation"> 
                     <img src="/assets/icons/website-orange.svg" alt="Website Link"/>
                   </a> 
                 </div> 

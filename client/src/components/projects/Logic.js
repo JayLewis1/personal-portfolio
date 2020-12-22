@@ -15,10 +15,10 @@ const Logic = () => {
      <div>
        <h3>Logic Trades</h3>
        <span className="link-container">
-         <a href="https://github.com/JayLewis1/Portfolio">
+         <a href="https://github.com/JayLewis1/logic-trades">
            <img src="/assets/icons/github-blue.svg" alt="Github Link"/>
          </a>
-         <a href="/">
+         <a href="https://logictrades.herokuapp.com/">
            <img src="/assets/icons/website-blue.svg" alt="Website Link"/>
          </a>
        </span>
