@@ -141,12 +141,14 @@ header nav ul li .contact-link {
 
 .footer p span {
   color: #3382F7;
+  font-size: 1.2rem;
   font-weight: 700;
   margin-left: 4px;
 }
 
 .footer p a {
   color: #3382F7;
+  font-size: 1.2rem;
   text-decoration: none;
   margin: 0 5px;
 }
@@ -162,7 +164,7 @@ header nav ul li .contact-link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 15px;
+  margin: 15px;
 }
 
 .footer .flaticon-ref {
@@ -184,6 +186,10 @@ header nav ul li .contact-link {
 }
 
 .footer .flaticon-ref p {
+  font-size: 0.9rem;
+}
+
+.footer .flaticon-ref a {
   font-size: 0.9rem;
 }
 

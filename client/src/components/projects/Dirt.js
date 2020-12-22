@@ -15,7 +15,7 @@ const Dirt = () => {
       </Link>
     </div>
      <div className="photo-container">
-       <img className="project-photo" src="/assets/project-photos/dirt@2x.jpg" alt="Bouncing Dirt Website"/>
+       <img className="project-photo" src="/assets/project-photos/dirt@2x.jpg" alt="Dirt Website"/>
      </div>
      <div>
        <h3>Dirt</h3>
