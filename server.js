@@ -25,10 +25,10 @@ app.use(express.json({ extended: false }));
 
 app.use("/api/nodemailer", require("./routes/api/nodemailer"));
 
-app.use(express.static(path.join(__dirname, '/client/build')))
+app.use(express.static(path.join(__dirname, './client/build')))
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/build", "index.html"));
+  res.sendFile(path.join(__dirname, "./client/build", "index.html"));
 });
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
