@@ -30,13 +30,14 @@
     }
   }
   .contact-details {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     ul {
       display: flex;
       flex-direction: column;
       margin: 25px auto;
-      // width: 380px;
+      width: 380px;
+      padding: 0 3%;
 
     
       .number {
@@ -72,6 +73,8 @@
             margin-right: 20px;
           }
           button {
+            height: 100%;
+            width: 60px;
             background: none;
             border: none;
             outline: none;
@@ -79,11 +82,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 25px;
+            margin-left: auto;
             cursor: pointer;
             transition: 0.2s;
+      
             img {
               height: 40%;
+              margin: 0 auto;
             }
           }
           button:active {
@@ -91,14 +96,14 @@
           }
           a {
             height: 100%;
-            width: 50px;
-            margin-left: 25px;
+            width: 60px;
+            margin-left: auto;
             display: flex;
             align-items: center;
             justify-content: center;
             img {
             
-              width: 30%;
+              width: 40%;
               margin: 0 auto;
             }
         }
@@ -112,6 +117,8 @@
         margin-left: 15px;
         transition: 1s;
         z-index: 0;
+        position: absolute;
+        right: -120px;
         p {
           margin-right: 10px;
           color: $textLight;
@@ -119,15 +126,15 @@
         }
       }
       .showCopied {
-        width: 350px;
+        width: 100px;
         overflow: visible;
         display: flex;
         align-items: center;
         justify-content: center;
-  
         margin-left: 15px;
-        transition: 1s;
+        transition: 0.5s;
         z-index: 0;
+
         p {
           margin-right: 10px;
           color: $textLight;
@@ -237,12 +244,14 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        border: 2px red solid;
         .number , .email , .LinkedIn {
           width: 100%;
           margin: 15px auto;
       }
       li {
+        span {
+          right: -100px;
+         }
         div {
           height: 50px;
           img {
@@ -266,9 +275,9 @@
   .contact-container {
     width: 100%;
     .contact-details {
-      // width: 80%;
+       width: 90%;
       ul {
-        // width: 100%;
+        width: 100%;
         align-items: center;
         justify-content: center;
         .number , .email , .LinkedIn {
@@ -276,6 +285,9 @@
           margin: 15px auto;
       }
       li {
+        span {
+          right: -110px;
+         }
         div {
           button , a { 
             margin-left: auto;

@@ -1,6 +1,7 @@
 .portfolio-container {
   width: 80%;
   margin: 0 auto;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   align-items :center;
@@ -106,6 +107,14 @@
 }
 
 @media (max-width : 725px) {
+  .portfolio-container {
+    .portfolio-grid {
+      gap : 20px;
+      li {
+        height: 150px;
+      }
+    }
+  }
   .project-container {
     flex-direction: column;
     margin-top: 50px;

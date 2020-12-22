@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -227,15 +228,24 @@ header nav ul li .contact-link {
   color: #3382F7;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 726px) {
   .footer {
+    width: 80%;
+  }
+  .footer nav {
     width: 100%;
   }
-}
-
-@media (min-width: 761px) {
-  .footer {
-    width: 60%;
+  .footer nav ul li {
+    margin: 0 5px;
+  }
+  .footer .github-wrapper {
+    width: 100%;
+  }
+  .footer .github-wrapper img {
+    display: none;
+  }
+  .footer .flaticon-ref {
+    width: 100%;
   }
 }
 
@@ -438,31 +448,6 @@ header nav ul li .contact-link {
   width: 50%;
 }
 
-.projects-container .dirt-display:hover {
-  width: 75%;
-}
-
-.projects-container .dirt-display:hover + .bouncing-display {
-  width: 25%;
-}
-
-.projects-container .dirt-display:hover + .bouncing-display .project-name {
-  margin: 0;
-  margin-top: 25px;
-  margin-left: 20px;
-  width: 200px;
-}
-
-.projects-container .dirt-display:hover + .bouncing-display .project-photo {
-  width: 70%;
-  margin-left: -30px;
-  margin-top: 100px;
-}
-
-.projects-container .dirt-display:hover + .bouncing-display .project-link {
-  width: 0;
-}
-
 .projects-container .bouncing-display {
   background-color: #FFC3FD;
   width: calc(50% - 25px);
@@ -485,14 +470,6 @@ header nav ul li .contact-link {
   top: 100px;
   left: 200px;
   margin-left: -30px;
-}
-
-.projects-container .bouncing-display:hover {
-  width: 75%;
-}
-
-.projects-container .bouncing-display:hover + .dirt-display {
-  width: 25%;
 }
 
 .projects-container .logic-display {
@@ -609,24 +586,6 @@ header nav ul li .contact-link {
   margin-left: -80px;
 }
 
-.projects-container .see-all-projects:hover {
-  width: 95%;
-}
-
-.projects-container .see-all-projects:hover .all-projects-images {
-  opacity: 1;
-}
-
-.projects-container .see-all-projects:hover .all-projects-link {
-  margin-top: 0;
-  -webkit-transform: translate(180px, 20px);
-          transform: translate(180px, 20px);
-}
-
-.projects-container .see-all-projects:hover + .logic-display {
-  width: 5%;
-}
-
 @media (max-width: 725px) {
   .projects-container {
     width: 100%;
@@ -661,25 +620,54 @@ header nav ul li .contact-link {
     width: 80%;
     margin: 0 auto;
   }
-  .projects-container .see-all-projects:hover {
-    width: 95%;
-  }
-  .projects-container .see-all-projects:hover .all-projects-images {
-    opacity: 1;
-  }
-  .projects-container .see-all-projects:hover .all-projects-link {
-    margin-top: 0;
-    -webkit-transform: translate(180px, 20px);
-            transform: translate(180px, 20px);
-  }
-  .projects-container .see-all-projects:hover + .logic-display {
-    width: 5%;
+  .projects-container .link-container {
+    right: 15px;
   }
 }
 
 @media (min-width: 726px) {
   .title-wrapper {
     width: 50%;
+  }
+  .dirt-display:hover {
+    width: 75%;
+  }
+  .dirt-display:hover + .bouncing-display {
+    width: 25%;
+  }
+  .dirt-display:hover + .bouncing-display .project-name {
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 200px;
+  }
+  .dirt-display:hover + .bouncing-display .project-photo {
+    width: 70%;
+    margin-left: -30px;
+    margin-top: 100px;
+  }
+  .dirt-display:hover + .bouncing-display .project-link {
+    width: 0;
+  }
+  .bouncing-display:hover {
+    width: 75%;
+  }
+  .bouncing-display:hover + .dirt-display {
+    width: 25%;
+  }
+  .see-all-projects:hover {
+    width: 95%;
+  }
+  .see-all-projects:hover .all-projects-images {
+    opacity: 1;
+  }
+  .see-all-projects:hover .all-projects-link {
+    margin-top: 0;
+    -webkit-transform: translate(180px, 20px);
+            transform: translate(180px, 20px);
+  }
+  .see-all-projects:hover + .logic-display {
+    width: 5%;
   }
 }
 
@@ -1178,7 +1166,7 @@ header nav ul li .contact-link {
 }
 
 .contact-container .contact-details {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1191,6 +1179,8 @@ header nav ul li .contact-link {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 25px auto;
+  width: 380px;
+  padding: 0 3%;
 }
 
 .contact-container .contact-details ul .number {
@@ -1242,6 +1232,8 @@ header nav ul li .contact-link {
 }
 
 .contact-container .contact-details ul li div button {
+  height: 100%;
+  width: 60px;
   background: none;
   border: none;
   outline: none;
@@ -1255,7 +1247,7 @@ header nav ul li .contact-link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 25px;
+  margin-left: auto;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1263,6 +1255,7 @@ header nav ul li .contact-link {
 
 .contact-container .contact-details ul li div button img {
   height: 40%;
+  margin: 0 auto;
 }
 
 .contact-container .contact-details ul li div button:active {
@@ -1272,8 +1265,8 @@ header nav ul li .contact-link {
 
 .contact-container .contact-details ul li div a {
   height: 100%;
-  width: 50px;
-  margin-left: 25px;
+  width: 60px;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1286,7 +1279,7 @@ header nav ul li .contact-link {
 }
 
 .contact-container .contact-details ul li div a img {
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -1306,6 +1299,8 @@ header nav ul li .contact-link {
   -webkit-transition: 1s;
   transition: 1s;
   z-index: 0;
+  position: absolute;
+  right: -120px;
 }
 
 .contact-container .contact-details ul li span p {
@@ -1315,7 +1310,7 @@ header nav ul li .contact-link {
 }
 
 .contact-container .contact-details ul li .showCopied {
-  width: 350px;
+  width: 100px;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1327,8 +1322,8 @@ header nav ul li .contact-link {
       -ms-flex-pack: center;
           justify-content: center;
   margin-left: 15px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   z-index: 0;
 }
 
@@ -1500,11 +1495,13 @@ header nav ul li .contact-link {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 2px red solid;
   }
   .contact-container .contact-details ul .number, .contact-container .contact-details ul .email, .contact-container .contact-details ul .LinkedIn {
     width: 100%;
     margin: 15px auto;
+  }
+  .contact-container .contact-details ul li span {
+    right: -100px;
   }
   .contact-container .contact-details ul li div {
     height: 50px;
@@ -1525,7 +1522,11 @@ header nav ul li .contact-link {
   .contact-container {
     width: 100%;
   }
+  .contact-container .contact-details {
+    width: 90%;
+  }
   .contact-container .contact-details ul {
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1536,6 +1537,9 @@ header nav ul li .contact-link {
   .contact-container .contact-details ul .number, .contact-container .contact-details ul .email, .contact-container .contact-details ul .LinkedIn {
     width: 300px;
     margin: 15px auto;
+  }
+  .contact-container .contact-details ul li span {
+    right: -110px;
   }
   .contact-container .contact-details ul li div button, .contact-container .contact-details ul li div a {
     margin-left: auto;
@@ -1548,6 +1552,7 @@ header nav ul li .contact-link {
 .portfolio-container {
   width: 80%;
   margin: 0 auto;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1700,6 +1705,12 @@ header nav ul li .contact-link {
 }
 
 @media (max-width: 725px) {
+  .portfolio-container .portfolio-grid {
+    gap: 20px;
+  }
+  .portfolio-container .portfolio-grid li {
+    height: 150px;
+  }
   .project-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

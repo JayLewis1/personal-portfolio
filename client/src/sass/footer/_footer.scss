@@ -75,14 +75,37 @@
    }
 }
 
-@media (max-width : 750px) {
+@media (max-width : 726px) {
   .footer {
-    width: 100%;
+    width: 80%;
+   
+    nav { 
+      width: 100%;
+      ul {
+        li {
+          margin: 0 5px;
+        }
+      }
+    }
+    .github-wrapper {
+      width: 100%;
+      img {
+        display: none;
+      }
+    }
+    .flaticon-ref {
+      width: 100%;
+    }
   }
 }
+// @media (max-width : 750px) {
+//   .footer {
+//     width: 100%;
+//   }
+// }
 
-@media (min-width : 761px) {
-  .footer {
-    width: 60%;
-  }
-}
+// @media (min-width : 761px) {
+//   .footer {
+//     width: 60%;
+//   }
+// }

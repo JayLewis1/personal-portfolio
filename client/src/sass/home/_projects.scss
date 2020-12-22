@@ -91,26 +91,26 @@
       background-color: #FD9970;
       width: 50%;
     }
-    .dirt-display:hover {
-      width: 75%;
-    }
-    .dirt-display:hover + .bouncing-display {
-      width: 25%;
-      .project-name {
-        margin: 0;
-        margin-top: 25px;
-        margin-left:20px;
-        width: 200px;
-      }
-      .project-photo {
-        width: 70%;
-        margin-left: -30px;
-        margin-top: 100px;
-      }
-      .project-link {
-        width: 0;
-      }
-    }
+    // .dirt-display:hover {
+    //   width: 75%;
+    // }
+    // .dirt-display:hover + .bouncing-display {
+    //   width: 25%;
+    //   .project-name {
+    //     margin: 0;
+    //     margin-top: 25px;
+    //     margin-left:20px;
+    //     width: 200px;
+    //   }
+    //   .project-photo {
+    //     width: 70%;
+    //     margin-left: -30px;
+    //     margin-top: 100px;
+    //   }
+    //   .project-link {
+    //     width: 0;
+    //   }
+    // }
     .bouncing-display {
       background-color: #FFC3FD;
       width: calc(50% - 25px);
@@ -128,13 +128,13 @@
           margin-left: -30px;
       }
     }
-    .bouncing-display:hover {
-      width: 75%;
-    }
+    // .bouncing-display:hover {
+    //   width: 75%;
+    // }
 
-    .bouncing-display:hover + .dirt-display {
-      width: 25%;
-    }
+    // .bouncing-display:hover + .dirt-display {
+    //   width: 25%;
+    // }
     .logic-display {
       background-color: #FDEFE7;
       width: 90%;
@@ -219,19 +219,19 @@
           }
         }
     }
-    .see-all-projects:hover{
-      width: 95%;
-      .all-projects-images {
-        opacity: 1;
-      }
-      .all-projects-link {
-        margin-top: 0;
-        transform: translate(180px, 20px);
-      }
-    }
-    .see-all-projects:hover + .logic-display {
-      width: 5%;
-    }
+    // .see-all-projects:hover{
+    //   width: 95%;
+    //   .all-projects-images {
+    //     opacity: 1;
+    //   }
+    //   .all-projects-link {
+    //     margin-top: 0;
+    //     transform: translate(180px, 20px);
+    //   }
+    // }
+    // .see-all-projects:hover + .logic-display {
+    //   width: 5%;
+    // }
   }
 
   @media (max-width : 725px) {
@@ -249,7 +249,7 @@
           width: 80%;
           margin: 0 auto;
         }
-    
+  
         .bouncing-display {
           background-color: #FFC3FD;
           width: 80%;
@@ -266,23 +266,54 @@
           width: 80%;
           margin: 0 auto;
         }
-        .see-all-projects:hover{
-          width: 95%;
-          .all-projects-images {
-            opacity: 1;
-          }
-          .all-projects-link {
-            margin-top: 0;
-            transform: translate(180px, 20px);
-          }
-        }
-        .see-all-projects:hover + .logic-display {
-          width: 5%;
+        .link-container {
+          right: 15px;
         }
       }
   }
+ 
   @media (min-width : 726px) {
     .title-wrapper {
       width: 50%;
     }
-  }
+        .dirt-display:hover {
+          width: 75%;
+        }
+    .dirt-display:hover + .bouncing-display {
+      width: 25%;
+      .project-name {
+        margin: 0;
+        margin-top: 25px;
+        margin-left:20px;
+        width: 200px;
+      }
+      .project-photo {
+        width: 70%;
+        margin-left: -30px;
+        margin-top: 100px;
+      }
+      .project-link {
+        width: 0;
+      }
+    }
+    .bouncing-display:hover {
+      width: 75%;
+    }
+
+    .bouncing-display:hover + .dirt-display {
+      width: 25%;
+    }
+      .see-all-projects:hover{
+        width: 95%;
+        .all-projects-images {
+          opacity: 1;
+        }
+        .all-projects-link {
+          margin-top: 0;
+          transform: translate(180px, 20px);
+        }
+      }
+      .see-all-projects:hover + .logic-display {
+        width: 5%;
+      }
+}
