@@ -1,10 +1,11 @@
-import { EXACT_ROUTE_LOCATION } from "../actions/types";
+import { EXACT_ROUTE_LOCATION, ROUTE_CHANGE } from "../actions/types";
 
 const initialState = {
-  location: ""
+  location: "",
+  change: "",
 }
 
-export default function(state = initialState, action) {
+ const exactRouteLocation = (state = initialState, action)  => {
   const {type, payload} = action;
 
   switch(type) {
@@ -13,7 +14,14 @@ export default function(state = initialState, action) {
         ...state,
         location: payload
       };
+    case ROUTE_CHANGE : 
+      return {
+        ...state,
+        location: payload
+      };
       default : 
         return state;
   }
 }
+
+export default exactRouteLocation;

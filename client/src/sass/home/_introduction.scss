@@ -4,8 +4,8 @@
   margin: 0 auto;
   display: flex;
   .title-wrapper {
-  
-  margin-top: 150px;  
+    margin-top: 120px;
+    width: 45%;
     h1 {
     font-size: 4rem;
     font-weight: 800;
@@ -15,16 +15,101 @@
       color: $textLight;
       font-weight: 600;
     }
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      background-color: $textDark;
+      padding: 10px 20px;
+      font-family: $font;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 8px;
+      margin: 25px 0;
+      cursor: pointer;
+      img {
+        width: 15px;
+        transform: rotate(90deg);
+        margin-left: 10px;
+      }
+    }
+    div {
+      display: flex;
+      width: 150px;
+      a {
+        margin: 0 auto;
+        border-radius: 25px;
+        box-shadow: $boxShadow;
+        width: 50px;
+        height: 50px;
+        img {
+          width: 100%;
+
+        }
+      }
+    }
+  }
+  .illustration-con {
+    margin-left: auto;
+    width: 55%;
+
+    img {
+      width: 110%;
+      margin-top: 60px;
+      margin-left: 50px;
+    
+    }
   }
 }
 
 @media (max-width : 725px) {
-  .title-wrapper {
-    width: 100%;
+  .introduction-container {
+    .title-wrapper {
+      width: 100%;
+    }
+    .illustration-con {
+      display: none;
+    }
   }
 }
+@media (min-width : 726px) and (max-width : 1200px) {
+  .introduction-container {
+    .title-wrapper {
+      width: 50%;
+    }
+    .illustration-con {
+     width: 50%;
+     margin-left: 0px;
+     img {
+       margin-left: 0;
+     }
+    }
+  }
+}
+
 @media (min-width : 726px) {
   .title-wrapper {
     width: 50%;
   }
+}
+@media (min-width : 1201px) {
+  .introduction-container {
+    .title-wrapper {
+      div {
+        margin-top: 10px;
+        width: 200px;
+        a {
+          border-radius: 50px;
+          width: 70px;
+          height: 70px;
+          
+          img {
+            width: 100%;
+  
+          }
+        }
+      }
+    }
+ }
 }

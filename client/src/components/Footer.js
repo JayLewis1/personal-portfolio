@@ -17,10 +17,10 @@ import { connect } from "react-redux";
           <li><NavLink to="/#contact">Contact</NavLink></li>
         </ul>
       </nav>
-        <p>Site designed and developed by myself <span>Jay Lewis</span>.</p>
-        <span className="github-wrapper"><img src="/assets/icons/github-blue.svg" alt="github"/><p>You can check out the code for this site <a href="/">here</a> 😀</p></span>
+        <span className="github-wrapper"><img src="/assets/icons/github-no-bg.svg" alt="github"/><p>You can check out the code for this site <a href="/">here</a> 😀</p></span>
         <span className="flaticon-ref">
-          <p>Icons made by<a href="https://www.flaticon.com/authors/freepik" >Freepik</a> from <a href="https://www.flaticon.com/" >www.flaticon.com</a> </p></span>
+          <p>Icons made by<a href="https://www.flaticon.com/authors/freepik" >Freepik</a> from <a href="https://www.flaticon.com/" >www.flaticon.com</a> </p>
+        </span>
     </div>
   )
 }

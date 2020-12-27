@@ -20,14 +20,15 @@ const Logic = () => {
      <div>
        <h3>Logic Trades</h3>
        <span className="link-container">
-         <a href="https://github.com/JayLewis1/logic-trades">
+         <a href="https://github.com/JayLewis1/logic-trades" target="_blank" rel="noreferrer">
            <img src="/assets/icons/github-blue.svg" alt="Github Link"/>
          </a>
-         <a href="https://logictrades.herokuapp.com/">
+         <a href="https://logictrades.herokuapp.com/" target="_blank" rel="noreferrer">
            <img src="/assets/icons/website-blue.svg" alt="Website Link"/>
          </a>
        </span>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper scelerisque, libero ipsum aliquam turpis, ac dapibus velit nisl eu magna. Duis sit amet magna ac risus gravida vehicula eget vel nibh. Morbi diam nisl, placerat et consequat eu, volutpat at velit. Curabitur lacus felis, tempus eget mauris vel, eleifend tempus nibh. Nulla in fringilla diam, sed luctus ligula. Duis maximus nisl risus, id elementum mi convallis eget. Aliquam ac blandit urna, in eleifend ex. Nulla facilisi. </p>
+       <p>This is a proto-type company website for a forex trading team. The team wanted a site where they can show their services, testimonials, FAQ's, a way of joining their group and a contact page. I created this project using <b>React</b>, <b>redux</b>, <b>node.js</b> and <b>express</b>.</p> 
+       <p>I chose react becuase of the ease of creating UI components and gave the option to scale up in the future. I needed a way of handling cross application state which brought me to redux as it's a nice, simple, scaledable way of handling state which allows an efficient way for the frontend and server to communicate.</p>
        <Link to="/projects" className="mobile-backbtn">
          <img src="/assets/icons/arrow.svg" alt="back arrow"></img>
          Back to projects</Link>

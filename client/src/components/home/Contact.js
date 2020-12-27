@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from 'react'
+import React, { useState } from 'react'
 
 import PropTypes from "prop-types";
 
@@ -6,23 +6,23 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { handleFormDataWithNodemailer } from "../../redux/actions/contactForm";
 
-var lastCopyType;
+// var lastCopyType;
 
 const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
 
   const [copiedType, setCopiedType] = useState(2);
   const [formData, setFormData] = useState([]);
-  const [isTimerSet , setTimer ] = useState("no");
+  // const [isTimerSet , setTimer ] = useState("no");
 
-  useEffect(() => {
-    var timeout = setTimeout(() => {
-            setTimer("set")
-        }, 5000);
-    return () =>  clearTimeout(timeout);
-  }, [setTimer])
+  // useEffect(() => {
+  //   var timeout = setTimeout(() => {
+  //           setTimer("set")
+  //       }, 5000);
+  //   return () =>  clearTimeout(timeout);
+  // }, [setTimer])
 
 
-  lastCopyType = copiedType;
+  // lastCopyType = copiedType;
 
   const copyText =  (x) => { 
 
@@ -47,9 +47,9 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
       document.execCommand("copy");
       document.body.removeChild(textToBeCopied);
 
-      const hideCopy = () => {
-        setCopiedType(2)
-      }
+      // const hideCopy = () => {
+      //   setCopiedType(2)
+      // }
 
       // if(lastX === undefined || lastX === x) {
       //   console.log(x);
@@ -93,7 +93,7 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
               copiedType === 0 ? "showCopied" : null
             )}>
               <p>👍</p> 
-              <p>Copied!</p> 
+              <p className="copied-text">Copied!</p> 
             </span>
           </li>
           <li className="email">
@@ -108,14 +108,14 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
               copiedType === 1 ? "showCopied" : null
             )}>
               <p>👍</p> 
-              <p>Copied!</p> 
+              <p className="copied-text">Copied!</p> 
             </span>
           </li>
           <li className="LinkedIn">
            <div>
               <img src="/assets/icons/contact/linkedin.svg" alt="LinkedIn"/>
               <p>jaylewis98</p>
-              <a href="https://www.linkedin.com/in/jaylewis98/"  target="_blank"> 
+              <a href="https://www.linkedin.com/in/jaylewis98/"  target="_blank" rel="noreferrer"> 
               <img src="/assets/icons/blue-arrow.svg" alt="Go to linkedIn"/>
               </a>
             </div>
@@ -130,7 +130,6 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
               <p>*</p>
             </span>
             <input 
-              className="success" 
               type="text"
                id="name" 
                placeholder="John Smith" 

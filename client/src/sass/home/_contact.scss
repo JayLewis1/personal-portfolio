@@ -176,6 +176,7 @@
           }
         }
         input , textarea{
+          -webkit-appearance: none;
           border: none;
           outline: none;
           background-color: #F0F5FF;
@@ -213,6 +214,7 @@
         }
       }
       #submit {
+        -webkit-appearance: none;
         margin-top: 15px;
         width: 100%;
         height: 50px;
@@ -227,6 +229,7 @@
         color: white;
         cursor: pointer;
         transition: 0.3s;
+
       }
       #submit:active {
         transform: scale(1.1);
@@ -240,6 +243,12 @@
     width: 100%;
     .contact-details {
       width: 80%;
+      .showCopied {
+       right : -75px;
+      }
+      .copied-text {
+        display: none;
+      }
       ul {
         width: 100%;
         align-items: center;
@@ -259,7 +268,7 @@
           }
           button , a { 
             margin-left: auto;
-            margin-right: 25px;
+            margin-right: 0px;
          }
         }
       }

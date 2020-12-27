@@ -1,0 +1,45 @@
+.notfound-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 60%;
+    // height: 0px;
+    margin-bottom: 20%;
+    img {
+      width: 80px;
+      margin-top: 100px;
+    }
+    h3 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-top: 15px;
+    }
+    h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-top: 30px;
+ 
+    }
+    a {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $textLight;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width : 600px) { 
+  .notfound-container {
+    div {
+      width: 90%;
+      text-align: center;
+    }
+ }
+}

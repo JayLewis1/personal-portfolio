@@ -1,33 +1,47 @@
-import React , {useState, useEffect} from 'react'
-import { Link, useLocation, NavLink } from 'react-router-dom';
+import React , {useState} from 'react'
+import {NavLink } from 'react-router-dom';
+import PropTypes from "prop-types";
 
-var previousRoute;
+import { connect } from "react-redux";
 
-const Header = () => {
+// var previousRoute = "";
+var counter; 
 
-  // Use redux :  Create function to use on each component to set the state to their location
-  const [exactRoute, setLocationRoute] = useState();
-  
- var location = useLocation();
+const Header = ({routeLocation}) => {
+  const [openNav , setNavMenu] = useState(false);
 
- const setLocationOnRouteChange = () => {
-         setLocationRoute(location.pathname);
-         console.log("hello");
- }
 
- if(location.pathname !== previousRoute ) {
-  setLocationOnRouteChange();
-}
+  const openNavMenu = () => {
+    if( counter !== "open") {
+      setNavMenu(true);
+      return  counter = "open";
+    } else {
+      setNavMenu(false);
+      return  counter = "closed";
+    }
+  }
 
- previousRoute = location.pathname;
-
- useEffect(() => {
-  setLocationRoute(location.pathname);
- }, [setLocationRoute])
+  // Need to change state when route changes to close menu : CURRENTLY NOT WORKING
+  const closeNavMenu = () => {
+    setNavMenu(false);
+  }
 
   return (
     <header>
       <nav>
+        <ul>
+           <li><NavLink exact activeClassName="active" to="/" onClick={() => closeNavMenu()}>home</NavLink></li>
+           <li><NavLink exact activeClassName="active" to="/projects">projects</NavLink></li>
+          <li><a href="/#about">about</a></li>
+          <li><a href="/#contact" className="contact-link">contact</a></li>
+        </ul>
+      </nav>
+      <button className="burger-icon" onClick={() => openNavMenu()}>
+      <img src="/assets/icons/burger-menu.svg" alt="Burger Menu"/>
+      </button>
+
+      <div className="burger-menu" style={openNav === true ? { height: "270px" } : { height : "0"}}>
+        <nav>
         <ul>
            <li><NavLink exact activeClassName="active" to="/" >home</NavLink></li>
            <li><NavLink exact activeClassName="active" to="/projects">projects</NavLink></li>
@@ -35,8 +49,17 @@ const Header = () => {
           <li><a href="/#contact" className="contact-link">contact</a></li>
         </ul>
       </nav>
+      </div>
       </header>
   )
 }
 
-export default Header;
+Header.propTypes = {
+  routeLocation : PropTypes.object.isRequired
+}
+
+const MapStateToProps = (state) => ({
+  routeLocation : state.exactRouteLocation
+})
+
+export default connect(MapStateToProps)(Header);

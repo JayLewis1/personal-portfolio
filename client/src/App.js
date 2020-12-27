@@ -16,6 +16,7 @@ import Dirt from "./components/projects/Dirt";
 import BouncingBorders from "./components/projects/BouncingBorders";
 import Logic from "./components/projects/Logic";
 import Footer from "./components/Footer";
+import NotFound from "./components/NotFound";
 
  const App = ()  => {
   return (
@@ -29,6 +30,7 @@ import Footer from "./components/Footer";
           <Route exact path="/projects/dirt" component={Dirt} />
           <Route exact path="/projects/bouncingborders" component={BouncingBorders} />
           <Route exact path="/projects/logic" component={Logic} />
+          <Route component={NotFound} />
         </Switch>
       <Footer />
       </div>

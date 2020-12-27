@@ -242,6 +242,13 @@
         flex-direction: column;
         li {
           margin-bottom: 30px;
+          .link-container {
+            margin: 0;     
+            width: 60px;
+            left:calc(400px + 5vw);
+            top: 110px;
+            flex-direction: column;
+          }
         }
       }
         .dirt-display {
@@ -265,9 +272,6 @@
           background-color: $textLight;
           width: 80%;
           margin: 0 auto;
-        }
-        .link-container {
-          right: 15px;
         }
       }
   }

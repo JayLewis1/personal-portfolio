@@ -24,10 +24,10 @@ const Projects = () => {
                 <a href="/" className="project-link"> 
                 <img src="/assets/icons/arrow-left-pink.svg" alt="Link to project" className="shake-animation"/></a> 
                 <div className="link-container">
-                  <a href="https://github.com/JayLewis1/bouncingborderswp" className="bb-links" className="shake-animation"> 
+                  <a href="https://github.com/JayLewis1/bouncingborderswp" className="bb-links shake-animation"> 
                     <img src="/assets/icons/github-pink.svg" alt="Github Link"/> 
                   </a>
-                  <a href="http://bouncingborders.com/" className="bb-links" className="shake-animation"> 
+                  <a href="http://bouncingborders.com/" className="bb-links shake-animation"> 
                     <img src="/assets/icons/website-pink.svg" alt="Website Link"/>
                   </a> 
                 </div>

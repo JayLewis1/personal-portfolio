@@ -20,14 +20,14 @@ const BouncingBorders = () => {
        <div>
          <h3>Bouncing Borders</h3>
          <span className="link-container">
-           <a href="https://github.com/JayLewis1/Portfolio">
+           <a href="https://github.com/JayLewis1/bouncingborderswp" target="_blank" rel="noreferrer">
              <img src="/assets/icons/github-blue.svg" alt="Github Link"/>
            </a>
-           <a href="/">
+           <a href="http://bouncingborders.com/" target="_blank" rel="noreferrer">
              <img src="/assets/icons/website-blue.svg" alt="Website Link"/>
            </a>
          </span>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend, risus ac ullamcorper scelerisque, libero ipsum aliquam turpis, ac dapibus velit nisl eu magna. Duis sit amet magna ac risus gravida vehicula eget vel nibh. Morbi diam nisl, placerat et consequat eu, volutpat at velit. Curabitur lacus felis, tempus eget mauris vel, eleifend tempus nibh. Nulla in fringilla diam, sed luctus ligula. Duis maximus nisl risus, id elementum mi convallis eget. Aliquam ac blandit urna, in eleifend ex. Nulla facilisi. </p>
+         <p>I created this site to document my travels through Europe. I wanted to create a blog where we could write posts and also upload pictures we had. This porject was created with html, sass and php. I chose Wordpress initially becasue its an easy and organised way of writing posts, storing them and keeping track of them. This was my first project using the Wordpress format and php which came to be a big learning curve for me.</p>
          <Link to="/projects" className="mobile-backbtn">
          <img src="/assets/icons/arrow.svg" alt="back arrow"></img>
          Back to projects</Link>
