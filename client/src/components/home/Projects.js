@@ -7,7 +7,7 @@ const Projects = () => {
       <div className="projects-flex">
           <li className="dirt-display">
               <img className="project-name" src="/assets/project-names/dirt-name.svg" alt="Dirt"/>
-              <img  className="project-photo"src="/assets/project-photos/dirt@2x.jpg" alt="Dirt Page"/>
+              <img  className="project-photo"src="/assets/project-photos/dirt-com.jpeg" alt="Dirt Page"/>
               <Link to="/projects/dirt" className="project-link"> 
               <img src="/assets/icons/arrow-left.svg" alt="Link to project" className="shake-animation"/></Link> 
               <div className="link-container">
@@ -21,7 +21,7 @@ const Projects = () => {
           </li>
           <li className="bouncing-display">
               <img className="project-name" src="/assets/project-names/bouncing-name.svg" alt="Bouncing Borders"/>
-                <img  className="project-photo"src="/assets/project-photos/bouncing-borders@2x.jpg" alt="Bouncing Borders Page"/>
+                <img  className="project-photo"src="/assets/project-photos/bouncing-borders-com.jpeg" alt="Bouncing Borders Page"/>
                 <Link to="/projects/bouncingborders" className="project-link"> 
                 <img src="/assets/icons/arrow-left-pink.svg" alt="Link to project" className="shake-animation"/></Link> 
                 <div className="link-container">
@@ -37,7 +37,7 @@ const Projects = () => {
       <div className="projects-flex">
         <li className="logic-display">
           <img className="project-name" src="/assets/project-names/logic-name.svg" alt="Logic"/>
-                <img  className="project-photo"src="/assets/project-photos/logic@2x.jpg" alt="Logic Page"/>
+                <img  className="project-photo"src="/assets/project-photos/logic-com.jpeg" alt="Logic Page"/>
                 <Link to="/projects/logic" className="project-link"> 
                 <img src="/assets/icons/arrow-left-orange.svg" alt="Link to project" className="shake-animation"/></Link> 
                 <div className="link-container">
@@ -55,9 +55,9 @@ const Projects = () => {
               <img src="/assets/icons/arrow-left-blue.svg" alt="Link to all projects"/>
             </a>
             <div className="all-projects-images">
-              <img className="pro-1" src="/assets/project-photos/bouncing-borders@2x.jpg" alt="Bouncing Borders"/>
-              <img className="pro-2" src="/assets/project-photos/logic@2x.jpg" alt="Logic"/>
-              <img className="pro-3" src="/assets/project-photos/dirt@2x.jpg" alt="Dirt"/>
+              <img className="pro-1" src="/assets/project-photos/bouncing-borders-com.jpeg" alt="Bouncing Borders"/>
+              <img className="pro-2" src="/assets/project-photos/logic-com.jpeg" alt="Logic"/>
+              <img className="pro-3" src="/assets/project-photos/dirt-com.jpeg" alt="Dirt"/>
             </div>
         </li>
       </div>

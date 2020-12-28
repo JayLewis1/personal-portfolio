@@ -15,7 +15,7 @@ const Logic = () => {
       </Link>
     </div>
      <div className="photo-container">
-       <img className="project-photo" src="/assets/project-photos/logic@2x.jpg" alt="Logic Website"/>
+       <img className="project-photo" src="/assets/project-photos/logic-com.jpeg" alt="Logic Website"/>
      </div>
      <div>
        <h3>Logic Trades</h3>

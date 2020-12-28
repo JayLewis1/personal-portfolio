@@ -27,17 +27,17 @@ const Projects = ({setRouteLocation}) => {
        <ul className="portfolio-grid">
           <li>
             <Link to="/projects/dirt">
-             <img src="/assets/project-photos/dirt@2x.jpg" alt="Dirt Website"/>  
+             <img src="/assets/project-photos/dirt-com.jpeg" alt="Dirt Website"/>  
             </Link>
           </li>  
           <li>
             <Link  to="/projects/bouncingborders">
-             <img src="/assets/project-photos/bouncing-borders@2x.jpg" alt="Bouncing Borders Website"/>  
+             <img src="/assets/project-photos/bouncing-borders-com.jpeg" alt="Bouncing Borders Website"/>  
             </Link>
           </li>  
           <li>
             <Link  to="/projects/logic">
-              <img src="/assets/project-photos/logic@2x.jpg" alt="Logic Website"/>
+              <img src="/assets/project-photos/logic-com.jpeg" alt="Logic Website"/>
             </Link>  
           </li>  
        </ul>

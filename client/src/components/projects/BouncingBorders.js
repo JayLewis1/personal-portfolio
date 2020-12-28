@@ -15,7 +15,7 @@ const BouncingBorders = () => {
         </Link>
       </div>
        <div className="photo-container">
-         <img className="project-photo" src="/assets/project-photos/bouncing-borders@2x.jpg" alt="Bouncing Borders Website"/>
+         <img className="project-photo" src="/assets/project-photos/bouncing-borders-com.jpeg" alt="Bouncing Borders Website"/>
        </div>
        <div>
          <h3>Bouncing Borders</h3>
