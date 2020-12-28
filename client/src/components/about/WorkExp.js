@@ -25,7 +25,7 @@ const WorkExp = () => {
 
   return (
     <Fragment>
-      <div className="table-row" style={rowIndex === 0 ? {maxHeight: "100%"} : {maxHeight : "70px"}}>
+      <div className="table-row" style={rowIndex === 0 ? {height: "100%"} : {height : "70px"}}>
         <div className="row-wrapper">
           <span className="left-wrapper">
             <p className="school">Specsavers</p>

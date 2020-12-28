@@ -720,6 +720,7 @@ header .burger-menu nav ul li .contact-link {
 .projects-container .see-all-projects .all-projects-link {
   width: 60px;
   height: 60px;
+  min-height: 60px;
   -webkit-box-shadow: 1px 2px 30px rgba(13, 35, 69, 0.2);
           box-shadow: 1px 2px 30px rgba(13, 35, 69, 0.2);
   margin: auto;
@@ -882,6 +883,37 @@ header .burger-menu nav ul li .contact-link {
   }
 }
 
+@media (max-width: 1100px) {
+  .projects-container .see-all-projects:hover {
+    width: 35%;
+  }
+  .projects-container .see-all-projects:hover .all-projects-images {
+    display: none;
+  }
+  .projects-container .see-all-projects:hover .all-projects-link {
+    margin-top: 0;
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  .projects-container .bouncing-display:hover {
+    width: 90%;
+  }
+  .projects-container .projects-flex li .link-container {
+    position: absolute;
+    left: 450px;
+    top: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 150px;
+    border: 2px red solid;
+  }
+}
+
 .about-container {
   width: 80%;
   margin: 200px auto;
@@ -1017,7 +1049,8 @@ header .burger-menu nav ul li .contact-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 20px 0;
+  min-height: 70px;
 }
 
 .about-container .table .row-wrapper .topic {
@@ -1058,10 +1091,6 @@ header .burger-menu nav ul li .contact-link {
 .about-container .table .row-wrapper button img {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.about-container .table .skill-wrapper {
-  margin-top: 10px;
 }
 
 .about-container .table .course-info {
@@ -1716,6 +1745,15 @@ header .burger-menu nav ul li .contact-link {
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.contact-container .form-container form .succes-msg {
+  color: #3382F7;
+  margin: 0;
+  margin: 20px auto;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .contact-container .form-container form #submit:active {

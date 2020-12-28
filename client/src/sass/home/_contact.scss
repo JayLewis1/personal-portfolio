@@ -212,6 +212,7 @@
           font-size: 1rem;
           font-weight: 600;
         }
+    
       }
       #submit {
         -webkit-appearance: none;
@@ -229,7 +230,14 @@
         color: white;
         cursor: pointer;
         transition: 0.3s;
-
+      }
+      .succes-msg {
+        color: $textLight;
+        margin: 0;
+        margin: 20px auto;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
       }
       #submit:active {
         transform: scale(1.1);

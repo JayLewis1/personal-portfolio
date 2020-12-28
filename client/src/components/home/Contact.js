@@ -1,36 +1,20 @@
-import React, { useState } from 'react'
-
+import React, { useState, useEffect } from 'react'
 import PropTypes from "prop-types";
 
 // Redux 
 import { connect } from "react-redux";
 import { handleFormDataWithNodemailer } from "../../redux/actions/contactForm";
 
-// var lastCopyType;
-
 const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
-
-  const [copiedType, setCopiedType] = useState(2);
+  const [copiedType, setCopiedType] = useState();
   const [formData, setFormData] = useState([]);
-  // const [isTimerSet , setTimer ] = useState("no");
-
-  // useEffect(() => {
-  //   var timeout = setTimeout(() => {
-  //           setTimer("set")
-  //       }, 5000);
-  //   return () =>  clearTimeout(timeout);
-  // }, [setTimer])
-
-
-  // lastCopyType = copiedType;
+  const [timer, setTimer] = useState(false);
 
   const copyText =  (x) => { 
-
     setCopiedType(x);
-
-      var textToBeCopied = document.createElement("textarea");
+    var textToBeCopied = document.createElement("textarea");
     
-      switch(x) {
+    switch(x) {
         case 0 :
           textToBeCopied.value = "07592832146";
           break;
@@ -39,7 +23,7 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
           break;
         default :
             break;
-      }
+    }
       
       document.body.appendChild(textToBeCopied);
  
@@ -47,26 +31,14 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
       document.execCommand("copy");
       document.body.removeChild(textToBeCopied);
 
-      // const hideCopy = () => {
-      //   setCopiedType(2)
-      // }
-
-      // if(lastX === undefined || lastX === x) {
-      //   console.log(x);
-      //   setTimeout(() => {
-      //     setCopiedType(2);
-      //   }, 5000);
-      // } else {
-      //   console.log("else" + x);
-      //   setCopiedType(x);
-      // }
       }
 
+    
       const onChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
     
        }
-      const onSubmit = (e) => {
+      const onSubmit = async (e) => {
         e.preventDefault();
         handleFormDataWithNodemailer(formData);
       }
@@ -75,6 +47,31 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
       var nameErrors = handledFormData.formData.error.name;
       var emailErrors = handledFormData.formData.error.email;
       var messageErrors = handledFormData.formData.error.message;
+      var isValid = handledFormData.formData.isValid;
+
+       const resetFormInputs = () => {
+        var nameInput = document.getElementById("name");
+        var emailInput = document.getElementById("email");
+        var companyInput = document.getElementById("company");
+        var messageInput = document.getElementById("message");
+
+        nameInput.value = "";
+        emailInput.value = "";
+        companyInput.value = "";
+        messageInput.value = "";
+       }
+
+      useEffect(() => {
+        if(isValid === true ) {
+          console.log("Changed")
+          setFormData([])
+          resetFormInputs();
+          setTimer(true);
+          setTimeout(function(){
+            setTimer(false);
+          },5000);
+        }
+      }, [isValid])
 
   return (
     <div className="contact-container" id="contact">
@@ -189,6 +186,10 @@ const Contact = ( { handleFormDataWithNodemailer, handledFormData } ) => {
               }
           </span>
           <input type="submit" value="Send Message" id="submit"/>
+           
+              {
+               (isValid === true) && (timer === true) ? <p className="succes-msg">Message Sent!</p> : null
+              }
         </form>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -7,8 +8,8 @@ const Projects = () => {
           <li className="dirt-display">
               <img className="project-name" src="/assets/project-names/dirt-name.svg" alt="Dirt"/>
               <img  className="project-photo"src="/assets/project-photos/dirt@2x.jpg" alt="Dirt Page"/>
-              <a href="/" className="project-link"> 
-              <img src="/assets/icons/arrow-left.svg" alt="Link to project" className="shake-animation"/></a> 
+              <Link to="/projects/dirt" className="project-link"> 
+              <img src="/assets/icons/arrow-left.svg" alt="Link to project" className="shake-animation"/></Link> 
               <div className="link-container">
                 <a href="https://github.com/JayLewis1/dirt" className="shake-animation"> 
                   <img src="/assets/icons/github.svg" alt="Github Link"/> 
@@ -21,8 +22,8 @@ const Projects = () => {
           <li className="bouncing-display">
               <img className="project-name" src="/assets/project-names/bouncing-name.svg" alt="Bouncing Borders"/>
                 <img  className="project-photo"src="/assets/project-photos/bouncing-borders@2x.jpg" alt="Bouncing Borders Page"/>
-                <a href="/" className="project-link"> 
-                <img src="/assets/icons/arrow-left-pink.svg" alt="Link to project" className="shake-animation"/></a> 
+                <Link to="/projects/bouncingborders" className="project-link"> 
+                <img src="/assets/icons/arrow-left-pink.svg" alt="Link to project" className="shake-animation"/></Link> 
                 <div className="link-container">
                   <a href="https://github.com/JayLewis1/bouncingborderswp" className="bb-links shake-animation"> 
                     <img src="/assets/icons/github-pink.svg" alt="Github Link"/> 
@@ -37,8 +38,8 @@ const Projects = () => {
         <li className="logic-display">
           <img className="project-name" src="/assets/project-names/logic-name.svg" alt="Logic"/>
                 <img  className="project-photo"src="/assets/project-photos/logic@2x.jpg" alt="Logic Page"/>
-                <a href="/" className="project-link"> 
-                <img src="/assets/icons/arrow-left-orange.svg" alt="Link to project" className="shake-animation"/></a> 
+                <Link to="/projects/logic" className="project-link"> 
+                <img src="/assets/icons/arrow-left-orange.svg" alt="Link to project" className="shake-animation"/></Link> 
                 <div className="link-container">
                   <a href="https://github.com/JayLewis1/logic-trades" className="shake-animation"> 
                     <img src="/assets/icons/github-orange.svg" alt="Github Link"/> 
