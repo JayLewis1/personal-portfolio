@@ -46,10 +46,10 @@ export const handleFormDataWithNodemailer = (formData) => (dispatch) => {
     })
     axios.post('/api/nodemailer', formData)
     .then(function (res) {
-      console.log(res);
+      // console.log(res);
     })
     .catch(function (err) {
-      console.log(err);
+      // console.log(err);
     });
   } else {
     dispatch({
