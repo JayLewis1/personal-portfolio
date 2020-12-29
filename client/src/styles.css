@@ -571,6 +571,9 @@ header .burger-menu nav ul li .contact-link {
           justify-content: center;
   -webkit-box-shadow: 1px 2px 30px rgba(13, 35, 69, 0.2);
           box-shadow: 1px 2px 30px rgba(13, 35, 69, 0.2);
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .projects-container .projects-flex li .project-link img {
@@ -910,7 +913,6 @@ header .burger-menu nav ul li .contact-link {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 150px;
-    border: 2px red solid;
   }
 }
 
