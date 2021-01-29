@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
 const path = require("path");
 const cors = require("cors");
@@ -18,24 +18,15 @@ var corsOptions = {
 }
 app.use(cors(corsOptions))
 
-app.use(bodyParser.json())
+// app.use(bodyParser.json())
 
-app.use(bodyParser.urlencoded({extended: false}));
+// app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.json({ extended: false }));
 
 // Use Favicon Icon
-app.use(favicon(__dirname + '/build/favicon.ico'));
-
-
-// app.get("/", (req, res) => res.send("API running"));
+app.use(favicon(__dirname + '/client/build/favicon.ico'));
 
 app.use("/api/nodemailer", require("./routes/api/nodemailer"));
-
-// app.use(express.static(path.join(__dirname, './client/build')))
-
-// app.get("/*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build", "index.html"));
-// });
 
 app.use(express.static('./client/build'))
 
