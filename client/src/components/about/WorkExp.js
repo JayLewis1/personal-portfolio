@@ -37,7 +37,7 @@ const WorkExp = () => {
             </div>
             <div className="course-info">
           <p>Being in a role solely focused on the customer has opened up my knowledge and developed my skills massively when it comes to customers. </p>
-          <p>The role included many jobs which increased over the period of time working here through training and the amount of effort I put in. This gave me the ability to adapt to different roles due to many different types of jobs that had to be done in a day for example throughout the day I might have to arrive a patient in, preform a pretest to then finding the customers needs and preferences and finally advising them and fitting a pair of glasses. </p>
+          <p>The role included many jobs which increased over the period of time working here through training and the amount of effort I put in. This gave me the ability to adapt to different roles due to many different types of jobs that had to be done in a day for example throughout the day I might have to check a patient in, perform a pretest to then finding the customers needs and preferences and finally advising them and fitting a pair of glasses. </p>
           <p>Throughout the job role I would learn different topics and new things to better my performance in the job role and then eventually became a massive asset to the team on sales and also customer experience.</p>
           <p>I also created bonds with many of my colleagues here and became a positive asset to the team.</p>
         </div>
@@ -53,8 +53,8 @@ const WorkExp = () => {
             <img src="/assets/icons/down-arrow.svg" alt="Down Arrow" style={rowIndex === 1 ? { transform: "rotate(180deg)"} : {transform: "rotate(0deg)"}} /></button>    
             </div>  
           <div className="course-info">
-            <p>This role presented me face to face with customers where I had to be behind the bar taking orders, holding conversations and making sure the customer </p>
-            <p>The bar had to be kept at a high standard of cleanliness, professionalism while obtaining a certain atmosphere. Some shifts I was the only member staff working so had to keep these stands up by myself which gave me responsibility and developed my professionalism.</p>
+            <p>This role presented me face to face with customers where I had to be behind the bar taking orders, holding conversations and making sure the customer was satisified.</p>
+            <p>The bar had to be kept at a high standard of cleanliness, professionalism while obtaining a certain atmosphere. Some shifts I was the only member of staff working so had to keep these standards up by myself which gave me responsibility and developed my professionalism.</p>
         </div>
       </div>
       <div className="table-row" style={rowIndex === 2 ? {maxHeight: "100%"} : {maxHeight : "70px"}}>
@@ -69,7 +69,7 @@ const WorkExp = () => {
         </div>  
           <div className="course-info">
             <p>My responsibilities within this role included delivering products to different Tesco petrol stations. I developed time management skills due to having to deliver the product at the slotted time.</p>
-            <p>This role was my first experience interacting with customers although it wasn’t a customer service roll. This helped to initially develop customer understanding skills.</p>
+            <p>This role was my first experience interacting with customers although it wasn’t a customer service role. This helped to initially develop customer understanding skills.</p>
             <p>Not too long into the role I was given more responsibility where I had to do a unique route which included picking up food samples from factories and taking them to lab for testing.</p>
           </div>
       </div>

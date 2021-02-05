@@ -37,7 +37,7 @@ const Education = () => {
         </div>
         <div></div>
         <div className="course-info">
-          <p>The role included many jobs which increased over the period of time working here through training and the amount of effort I put in. This gave me the ability to adapt to different roles due to many different types of jobs that had to be done in a day for example throughout the day I might have to arrive a patient in, preform a pretest to then finding the customers needs and preferences and finally advising them and fitting a pair of glasses. </p>
+          <p>This course introduced </p>
         </div>
       </div>
       <div className="table-row" id="sixth-form"style={rowIndex === 1 ? {maxHeight: "100%"} : {maxHeight : "70px"}}>

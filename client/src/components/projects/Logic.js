@@ -28,7 +28,7 @@ const Logic = () => {
          </a>
        </span>
        <p>This is a proto-type company website for a forex trading team. The team wanted a site where they can show their services, testimonials, FAQ's, a way of joining their group and a contact page. I created this project using <b>React</b>, <b>redux</b>, <b>node.js</b> and <b>express</b>.</p> 
-       <p>I chose react becuase of the ease of creating UI components and gave the option to scale up in the future. I needed a way of handling cross application state which brought me to redux as it's a nice, simple, scaledable way of handling state which allows an efficient way for the frontend and server to communicate.</p>
+       <p>I chose react because of the ease of creating UI components and gave the option to scale up in the future. I needed a way of handling cross application state which brought me to redux as it's a nice, simple, scaleable way of handling state which allows an efficient way for the frontend and server to communicate.</p>
        <Link to="/projects" className="mobile-backbtn">
          <img src="/assets/icons/arrow.svg" alt="back arrow"></img>
          Back to projects</Link>
