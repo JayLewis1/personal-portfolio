@@ -37,7 +37,10 @@ const Education = () => {
         </div>
         <div></div>
         <div className="course-info">
-          <p>This course introduced </p>
+        <p>This course introduced me to many different technologies and techniques through a series of modules. We would have a module brief that described the project we had to create and learning objectives. These modules were carried out in teams and as individually.</p>   <br />
+            <p>One project I carried out wihtin a team was a pub crawl application. This app displayed a map and generated a random route of the pubs in Plymouth so the user can plan out a pub crawl with ease. I contributed to the front-end of the appplication using HTML and CSS.</p>
+          <br />
+          <p>Another project was a train tracker app. Using a train time api we created a real-time visualisation of the train on the map. I was the front-end designer and developer on this team. With creating this application I went through the process of creating the brand of the app and making sure every element of the application linked together visually.</p>
         </div>
       </div>
       <div className="table-row" id="sixth-form"style={rowIndex === 1 ? {maxHeight: "100%"} : {maxHeight : "70px"}}>
