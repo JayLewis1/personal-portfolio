@@ -27,7 +27,7 @@ const Dirt = () => {
            <img src="/assets/icons/website-blue.svg" alt="Website Link"/>
          </a>
        </span>
-       <p>Dirt is an alice in tribute band who came to me to create a website to display tour dates, videos they had of the band, a way of contact and some information on the band. I created this site with plain <b>html</b>, <b>css</b> and <b>javacript</b> for the front-end and used <b>node.js</b> and <b>express</b> for the server side. I believe this project resulted really well although I didn't use React because it was a single page statless site.</p>
+       <p>Dirt is an Alice In Chains tribute band who came to me to create a website to display tour dates, videos they had of the band, a way of contact and some information on the band. I created this site with plain <b>html</b>, <b>css</b> and <b>javacript</b> for the front-end and used <b>node.js</b> and <b>express</b> for the server side.</p>
        <Link to="/projects" className="mobile-backbtn">
          <img src="/assets/icons/arrow.svg" alt="back arrow"></img>
          Back to projects</Link>

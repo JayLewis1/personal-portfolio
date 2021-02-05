@@ -27,7 +27,7 @@ const BouncingBorders = () => {
              <img src="/assets/icons/website-blue.svg" alt="Website Link"/>
            </a>
          </span>
-         <p>I created this site to document my travels through Europe. I wanted to create a blog where we could write posts and also upload pictures we had. This porject was created with <b>html</b>, <b>sass</b> and <b>php</b>. I chose <b>Wordpress</b> initially becasue its an easy and organised way of writing posts, storing them and keeping track of them. This was my first project using the Wordpress format and php which came to be a big learning curve for me.</p>
+         <p>I created this site to document my travels through Europe. I wanted to create a blog where we could write posts and also upload pictures we had. This project was created with <b>html</b>, <b>sass</b> and <b>php</b>. I chose <b>Wordpress</b> initially because its an easy and organised way of writing posts, storing them and keeping track of them. This was my first project using the Wordpress format and php which came to be a big learning curve for me.</p>
          <Link to="/projects" className="mobile-backbtn">
          <img src="/assets/icons/arrow.svg" alt="back arrow"></img>
          Back to projects</Link>
